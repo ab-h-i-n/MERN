@@ -26,21 +26,33 @@ body{
   height: 50vh;
   display: grid;
   place-content: center;
+  border-radius: 15px;
+  padding: 1rem;
 }
 form{
-  height: 100%;
-  width: 100%;
+  height: 50vh;
+  width: 50vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 1rem;
-  gap: .5rem;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
 }
-button[type = "submit"]{
-  min-width: 60%;
+input{
+  width: 70%;
+  height: 40px;
   border-radius: 7px;
-  height: 30px;
-
+  border: none;
+  padding: .5rem;
+}
+input[type = "submit"]{
+  margin-top: .5rem;
+  width: 40%;
+  border-radius: 7px;
+  height: 50px;
+  color: whitesmoke;
+  background-color: rgb(31, 30, 30);
 }
 
 

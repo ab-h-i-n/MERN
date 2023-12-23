@@ -1,10 +1,15 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
 
-app.get('/',(req,res)=>{
-    res.send('hello world')
-})
+app.use(cors());
+app.use(express.json());
 
-app.listen(1337,()=>{
+app.post('/api/register', (req, res) => {
+    console.log(req.body);
+    res.json({ status: 'ok' });
+});
+
+app.listen(1338, () => {
     console.log("Server initialized!");
-})
+});
